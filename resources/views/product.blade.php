@@ -27,10 +27,10 @@
             </button>
             <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
                 <div class="navbar-nav ms-auto">
-                    <a class="nav-link" aria-current="page" href="#">Home</a>
-                    <a class="nav-link" href="#">Tentang</a>
-                    <a class="nav-link" href="#">Menu</a>
-                    <a class="nav-link last-navlink" href="#">Kontak</a>
+                    <a class="nav-link" aria-current="page" href="{{ route('index') }}">Home</a>
+                    <a class="nav-link" href="{{ route('index') }}">Tentang</a>
+                    <a class="nav-link" href="{{ route('index') }}">Kategori</a>
+                    <a class="nav-link last-navlink" href="{{ route('index') }}">Kontak</a>
                 </div>
             </div>
         </div>

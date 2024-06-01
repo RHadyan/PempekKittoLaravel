@@ -1,19 +1,27 @@
-@import url('https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,100..900;1,100..900&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,100..900;1,100..900&display=swap");
+
+@import url("https://fonts.googleapis.com/css2?family=Fredoka:wght@300..700&family=Jost:ital,wght@0,100..900;1,100..900&display=swap");
 
 
+@font-face {
+    font-family: 'subskreb';
+    src: url('/font/Subscribe.ttf') format('woff2'),
+         url('/font/Subscribe.ttf') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
 
-@import url('https://fonts.googleapis.com/css2?family=Fredoka:wght@300..700&family=Jost:ital,wght@0,100..900;1,100..900&display=swap');
-
-.kitto{
-    font-family: "subscribe" !important;
+.kitto {
+    font-family: "subskreb" !important;
     font-size: 250px;
 }
-.pempek{
-    font-family: 'fredoka' !important;
-    font-size: 100px ;
+.pempek {
+    font-family: "fredoka" !important;
+    font-size: 100px;
 }
 
-.kitto,.pempek{
+.kitto,
+.pempek {
     margin-left: 200px;
 }
 
@@ -23,62 +31,61 @@
     margin-right: 30px;
 }
 
-nav{
+nav {
     background-color: #fff;
     height: 69px;
-font-weight: 600;
+    font-weight: 600;
 }
-.last-navlink{
+.last-navlink {
     margin-right: 70px;
 }
 
-.jumbotron{
+.jumbotron {
     height: 100vh;
     background-image: url(/images/Jumbotron.png);
-    background-size: cover
-
+    background-size: cover;
 }
 
-.tentang{
+.tentang {
     height: 120vh;
     background-color: black;
     overflow: hidden;
 }
 
-.row-tentang{
-margin-left: 90px;
+.row-tentang {
+    margin-left: 90px;
 }
 
 .col-tentang {
     margin-top: 100px;
 }
-.jembatan{
+.jembatan {
     width: 800px;
     margin-left: 200px;
 }
-.text-tentang{
+.text-tentang {
     font-size: 54px;
 }
 
-.text-tentang-deskripsi{
+.text-tentang-deskripsi {
     font-size: 24px;
 }
 
-.menus{
+.menus {
     margin-top: 100px;
 }
-.border-customer-menus{
+.border-customer-menus {
     border-right: solid 5px;
     border-left: solid 5px;
     stroke-width: 7px;
     border-color: rgba(19, 21, 27, 0.31);
 }
 
-.menus-margin{
+.menus-margin {
     margin-top: 40px;
 }
 
-.menu-text{
+.menu-text {
     margin-top: 200px;
 }
 
@@ -86,7 +93,7 @@ margin-left: 90px;
     font-size: 60px;
 }
 
-.menu-text hr{
+.menu-text hr {
     border: none;
     height: 3px;
     width: 20%;
@@ -94,37 +101,35 @@ margin-left: 90px;
     background-color: rgba(52, 63, 95, 0.853);
 }
 
-.kontak{
+.kontak {
     background-color: black;
     height: 75vh;
     margin-top: 200px;
 }
 
-.custom-card{
-   padding: 64px 82px 70px 82px;
+.custom-card {
+    padding: 64px 82px 70px 82px;
 }
 
-.text-kontak{
+.text-kontak {
     padding-top: 90px;
     padding-bottom: 59px;
 }
 
-.footer{
+.footer {
     margin-top: 70px;
 }
 
-.footer .container{
+.footer .container {
     padding: 70px;
 }
 
-.custom-card-menu{
-
+.custom-card-menu {
 }
-.buton-menu{
+.buton-menu {
     padding: 10px;
 }
 
-.custom-shadow{
+.custom-shadow {
     box-shadow: 4px 4px 4px 0px rgba(0, 0, 0, 0.25);
-
 }
