@@ -7,9 +7,9 @@ use App\Http\Controllers\MenuController;
 
 Route::get('/', function () {
     return view('index');
-});
+})->name('index');
 
-Route::get('/product',[MenuController::class, 'showProduct']) -> name('product');
+Route::get('/product/{kategori}',[MenuController::class, 'showProduct']) -> name('product');
 
 
 Route::get('/admin',[MenuController::class, 'admin']) -> name('admin.index');

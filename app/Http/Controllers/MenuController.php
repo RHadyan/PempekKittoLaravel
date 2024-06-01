@@ -85,8 +85,11 @@ class MenuController extends Controller
     }
     
 
-    public function showProduct(){
-        return view('product');
+    public function showProduct($kategori){
+        $menus= DB::table('menus')->where('kode_kategori','=',$kategori)->get();
+        
+        return view('product', ['kategori' => $kategori])->with('menus', $menus);
+
 
     }
 

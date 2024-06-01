@@ -30,9 +30,9 @@
             <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
                 <div class="navbar-nav ms-auto">
                     <a class="nav-link" aria-current="page" href="#">Home</a>
-                    <a class="nav-link" href="#">Tentang</a>
-                    <a class="nav-link" href="#">Menu</a>
-                    <a class="nav-link last-navlink" href="#">Kontak</a>
+                    <a class="nav-link" href="#tentang">Tentang</a>
+                    <a class="nav-link" href="#kategori">Kategori</a>
+                    <a class="nav-link last-navlink" href="#kontak">Kontak</a>
                 </div>
             </div>
         </div>
@@ -50,7 +50,7 @@
 
     <!-- tentang -->
 
-    <div class="tentang">
+    <div class="tentang" id="tentang">
         <div class="row row-tentang ">
             <div class="col-md-4 col-tentang">
                 <img class="" src="images/tentang.png" width="118px" height="120px" alt="">
@@ -87,7 +87,7 @@
 
 
     <!-- card kelebihan -->
-    <div class="container-fluid menus">
+    <div  class="container-fluid menus">
         <div class="row text-center">
             <div class="col-md-4">
                 <img src="images/Higienis.png" width="95px" height="100px" alt="">
@@ -115,8 +115,8 @@
             </div>
         </div>
 
-        <div class="text-center menu-text">
-            <h2>Menu</h2>
+        <div  id="kategori" class="text-center menu-text">
+            <h2>Kategori</h2>
             <hr>
         </div>
 
@@ -132,7 +132,7 @@
                             <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos hic
                                 reprehenderit animi vitae quis ex rem quidem rerum totam ullam?</p>
                             <h3>RP 0.000/porsi</h3>
-                            <a href="{{ route('product') }}" class="container buton-menu btn btn-warning">Go somewhere</a>
+                            <a href="{{ route('product',['kategori'=>'Pempek']) }}" class="container buton-menu btn btn-warning">Go somewhere</a>
                         </div>
                     </div>
                 </div>
@@ -144,7 +144,7 @@
                             <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos hic
                                 reprehenderit animi vitae quis ex rem quidem rerum totam ullam?</p>
                             <h3>RP 0.000/porsi</h3>
-                            <a href="#" class="container buton-menu btn btn-warning">Go somewhere</a>
+                            <a href="{{ route('product',['kategori'=>'Tekwan']) }}" class="container buton-menu btn btn-warning">Go somewhere</a>
                         </div>
                     </div>
                 </div>
@@ -156,7 +156,7 @@
                             <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos hic
                                 reprehenderit animi vitae quis ex rem quidem rerum totam ullam?</p>
                             <h3>RP 0.000/porsi</h3>
-                            <a href="#" class="container buton-menu btn btn-warning">Go somewhere</a>
+                            <a href="{{ route('product',['kategori'=>'Mie']) }}" class="container buton-menu btn btn-warning">Go somewhere</a>
                         </div>
                     </div>
                 </div>
@@ -176,7 +176,7 @@
 
     <!-- kontak -->
 
-    <div class="kontak">
+    <div id="kontak" class="kontak">
 
         <div class="text-center text-kontak text-white">
             <h1>Kontak</h1>

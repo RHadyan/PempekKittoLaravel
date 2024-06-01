@@ -20,7 +20,7 @@
 
     <nav class="navbar navbar-expand-lg sticky-top">
         <div class="container-fluid">
-            <a href=#"><img src="images/Logo.png" width="159px" height="66px" alt=""></a>
+            <a href="{{ route('index') }}"><img src="../images/Logo.png" width="159px" height="66px" alt=""></a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup"
                 aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
@@ -35,6 +35,29 @@
             </div>
         </div>
     </nav>
+
+    <div class="container mx-auto">
+        <div class="row justify-content-center text-center">
+            @foreach ($menus as $item )
+            <div class="col-md-4">
+                <div class="card  custom-shadow  mx-auto" style="width: 18rem;">
+                    <img src="{{ asset($item->gambar) }}" class="card-img-top" alt="...">
+                    <div class="card-body custom-card-menu">
+                        <h5 class="card-title">{{$item -> nama_produk}}</h5>
+                        <p class="card-text">{{$item -> deskripsi_produk}}</p>
+                        <h3>RP {{$item -> harga}}/porsi</h3>
+                        @if ($item-> stok == 0)
+                        <a href="" class="container buton-menu btn btn-danger">Stock Habis</a>
+                        @else
+                        <a href="https://wa.me/+6281389372857" target="_blank" class="container buton-menu btn btn-success">Beli Sekarang</a>
+                        @endif
+                    </div>
+                </div>
+            </div>
+            @endforeach
+            
+        </div>
+    </div>
 
 
 
