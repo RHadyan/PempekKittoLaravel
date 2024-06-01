@@ -21,7 +21,7 @@
 
                                     <div class="d-flex justify-content-center">
                                         
-                                        <a href="{{route('admin.editpempek', ['menu' => $item -> kode_produk])}}"  class="buton-edit btn btn-warning" data-toggle="modal" data-target="#exampleModalEdit">Edit</a>
+                                        <a href=""  class="buton-edit btn btn-warning" data-toggle="modal" data-target="#exampleModalEdit{{ $item->kode_produk }}">Edit</a>
                                         <form method="POST" action="{{route('admin.deletepempek', ['menu' => $item -> kode_produk])}}" id="delete">
                                             @csrf
                                             @method('DELETE')
@@ -31,6 +31,71 @@
                                 </div>
                             </div>
                         </div>
+
+{{-- MODAL edit --}}
+<div class="modal fade" id="exampleModalEdit{{ $item->kode_produk }}" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+aria-hidden="true">
+<div class="modal-dialog modal-dialog-centered" role="document">
+    <div class="modal-content">
+        <div class="modal-header">
+            <h3 class="modal-title" id="exampleModalLabel">Edit Menu</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+        </div>
+        <div class="modal-body">
+            <form method="POST" action="{{ route('admin.update',$item->kode_produk) }}" enctype="multipart/form-data">
+                @csrf
+                @method('put')
+                <div class="mb-3">
+                    <label for="recipient-name" class="col-form-label">Nama Pempek : </label>
+                    <input type="text" name="nama_produk" value="{{$item -> nama_produk}}" class="form-control">
+
+                </div>
+                <div class="mb-3">
+                    <label for="recipient-name" class="col-form-label">Deskripsi : </label>
+                    <textarea type="text" name="deskripsi_produk" value="" class="form-control"> {{$item -> deskripsi_produk}} </textarea>
+
+                </div>
+                <div class="mb-3">
+                    <label for="recipient-name" class="col-form-label">Harga : </label>
+                    <input type="text" value="{{$item -> harga}}" name="harga" class="form-control">
+                </div>
+                <div class="mb-3">
+                    <label for="recipient-name" class="col-form-label">Kategori : </label>
+                    <select  class="form-control" name="kode_kategori" id="">
+                        <option {{ $item->kode_kategori == 'Pempek'?'selected':''}} class="option" value="Pempek">Pempek</option>
+                        <option {{ $item->kode_kategori == 'Tekwan'?'selected':''}} class="option" value="Tekwan">Tekwan</option>
+                        <option {{ $item->kode_kategori == 'Mie'?'selected':''}} class="option" value="Mie">Mie</option>
+
+                    </select>
+                </div>
+                <div class="mb-3">
+                    <label for="recipient-name" class="col-form-label">Stock : </label>
+                    <select class="form-control" name="stok" id="">
+                        <option {{ $item->stok == "0"?'selected':'' }} class="option" value="0">Habis</option>
+                        <option {{ $item->stok == "1"?'selected':'' }} class="option" value="1">Ada Stock</option>
+                    </select>
+                </div>
+                <div class="mb-3">
+                    <label for="message-text" class="col-form-label">Gambar : </label>
+                    <img src="{{ asset($item->gambar) }}" width="120px" alt="">
+                    <input type="file" name="gambar" class="form-control mt-2">
+                </div>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                <button type="submit" class="btn btn-primary">Save changes</button>
+            </div>
+        </form>
+    </div>
+</div>
+</div>
+
+
+
+
+
                         @endforeach
                     </div>
                 </div>
@@ -39,7 +104,7 @@
 
 
 
-{{-- MODAL CREATE --}}
+{{-- MODAL CREATE --}}    
         <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
             aria-hidden="true">
             <div class="modal-dialog modal-dialog-centered" role="document">
@@ -88,85 +153,15 @@
                                 <label for="message-text" class="col-form-label">Gambar : </label>
                                 <input type="file" name="gambar" class="form-control">
                             </div>
-
-                            <div>
-                                <button type="submit" class="btn btn-primary">Save Changes </button>
-                            </div>
-
-                        </form>
-                    </div>
-                    <div class="modal-footer">
-                        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-                        <button type="button" class="btn btn-primary">Save changes</button>
-                    </div>
+                        </div>
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                            <button type="submit" class="btn btn-primary">Save changes</button>
+                        </div>
+                    </form>
                 </div>
             </div>
         </div>
-
-{{-- MODAL edit --}}
-        <div class="modal fade" id="exampleModalEdit" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
-            aria-hidden="true">
-            <div class="modal-dialog modal-dialog-centered" role="document">
-                <div class="modal-content">
-                    <div class="modal-header">
-                        <h3 class="modal-title" id="exampleModalLabel">Edit Menu</h5>
-                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                                <span aria-hidden="true">&times;</span>
-                            </button>
-                    </div>
-                    <div class="modal-body">
-                        <form method="POST" action="" enctype="multipart/form-data">
-                            @csrf
-                            @method('post')
-                            <div class="mb-3">
-                                <label for="recipient-name" class="col-form-label">Nama Pempek : </label>
-                                <input type="text" name="nama_produk" class="form-control">
-
-                            </div>
-                            <div class="mb-3">
-                                <label for="recipient-name" class="col-form-label">Deskripsi : </label>
-                                <textarea type="text" name="deskripsi_produk" class="form-control"> </textarea>
-
-                            </div>
-                            <div class="mb-3">
-                                <label for="recipient-name" class="col-form-label">Harga : </label>
-                                <input type="text" name="harga" class="form-control">
-                            </div>
-                            <div class="mb-3">
-                                <label for="recipient-name" class="col-form-label">Kategori : </label>
-                                <select class="form-control" name="kode_kategori" id="">
-                                    <option class="option" value="Pempek">Pempek</option>
-                                    <option class="option" value="Tekwan">Tekwan</option>
-                                    <option class="option" value="Mie">Mie</option>
-
-                                </select>
-                            </div>
-                            <div class="mb-3">
-                                <label for="recipient-name" class="col-form-label">Stock : </label>
-                                <select class="form-control" name="stok" id="">
-                                    <option class="option" value="0">Habis</option>
-                                    <option class="option" value="1">Ada Stock</option>
-                                </select>
-                            </div>
-                            <div class="mb-3">
-                                <label for="message-text" class="col-form-label">Gambar : </label>
-                                <input type="file" name="gambar" class="form-control">
-                            </div>
-
-                            <div>
-                                <button type="submit" class="btn btn-primary">Save Changes </button>
-                            </div>
-
-                        </form>
-                    </div>
-                    <div class="modal-footer">
-                        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-                        <button type="button" class="btn btn-primary">Save changes</button>
-                    </div>
-                </div>
-            </div>
-        </div>
-
 
 
 

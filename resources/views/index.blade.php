@@ -128,11 +128,11 @@
                     <div class="card  custom-shadow mx-auto" style="width: 25rem;">
                         <img src="images/Pempek1.png" class="card-img-top" alt="...">
                         <div class="card-body custom-card-menu">
-                            <h5 class="card-title">Nama Pempek</h5>
+                            <h5 class="card-title">PEMPEK</h5>
                             <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos hic
                                 reprehenderit animi vitae quis ex rem quidem rerum totam ullam?</p>
                             <h3>RP 0.000/porsi</h3>
-                            <a href="#" class="container buton-menu btn btn-warning">Go somewhere</a>
+                            <a href="{{ route('product') }}" class="container buton-menu btn btn-warning">Go somewhere</a>
                         </div>
                     </div>
                 </div>
@@ -140,7 +140,7 @@
                     <div class="card  custom-shadow  mx-auto" style="width: 25rem;">
                         <img src="images/Pempek1.png" class="card-img-top" alt="...">
                         <div class="card-body custom-card-menu">
-                            <h5 class="card-title">Nama Pempek</h5>
+                            <h5 class="card-title">TEKWAN</h5>
                             <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos hic
                                 reprehenderit animi vitae quis ex rem quidem rerum totam ullam?</p>
                             <h3>RP 0.000/porsi</h3>
@@ -152,7 +152,7 @@
                     <div class="card custom-shadow  mx-auto" style="width: 25rem;">
                         <img src="images/Pempek1.png" class="card-img-top" alt="...">
                         <div class="card-body custom-card-menu">
-                            <h5 class="card-title">Nama Pempek</h5>
+                            <h5 class="card-title">MIE</h5>
                             <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos hic
                                 reprehenderit animi vitae quis ex rem quidem rerum totam ullam?</p>
                             <h3>RP 0.000/porsi</h3>
