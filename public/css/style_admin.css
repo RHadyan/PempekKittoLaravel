@@ -1,0 +1,19 @@
+.custom-margin-card{
+    margin-left: 20px;
+}
+.card-body{
+    padding: 0.4rem 1rem 1rem 1rem !important;
+}
+.card-tittle{
+    margin-bottom: 0 !important;
+}
+
+p{
+    
+}
+.option{
+    font-size: 15px;
+}
+.active{
+    background-color: rgb(182, 182, 182);
+}
