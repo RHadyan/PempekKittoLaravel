@@ -58,6 +58,17 @@
               <i class="ni ni-tv-2 text-black"></i> Pempek
             </a>
           </li>
+          <li class="nav-item">
+            <form method="POST" action="{{ route('logout') }}">
+              @csrf
+
+              <x-dropdown-link :href="route('logout')"
+                      onclick="event.preventDefault();
+                                  this.closest('form').submit();">
+                  {{ __('Log Out') }}
+          </x-dropdown-link>
+          </form>
+          </li>
         </ul>
         <!-- Navigation -->
       </div>

@@ -35,9 +35,12 @@
                       <span class="h2 font-weight-bold mb-0">2,356</span>
                     </div>
                     <div class="col-auto">
+                      {{-- LOGOUT --}}
+                      <div>
                       <div class="icon icon-shape bg-warning text-white rounded-circle shadow">
                         <i class="fas fa-chart-pie"></i>
                       </div>
+                    </div>
                     </div>
                   </div>
                   <p class="mt-3 mb-0 text-muted text-sm">
