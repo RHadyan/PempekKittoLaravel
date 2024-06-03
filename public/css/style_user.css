@@ -47,7 +47,7 @@ nav {
 }
 
 .tentang {
-    height: 120vh;
+    height: 100vh;
     background-color: black;
     overflow: hidden;
 }
@@ -94,6 +94,23 @@ nav {
 }
 
 .menu-text hr {
+    border: none;
+    height: 3px;
+    width: 20%;
+    margin: 20px auto;
+    background-color: rgba(52, 63, 95, 0.853);
+}
+
+
+.menu-text-product {
+    margin-top: 60px;
+}
+
+.menu-text-product h2 {
+    font-size: 60px;
+}
+
+.menu-text-product hr {
     border: none;
     height: 3px;
     width: 20%;

@@ -22,7 +22,7 @@
     <!-- nav -->
     <nav class="navbar navbar-expand-lg sticky-top">
         <div class="container-fluid">
-            <a href=#"><img src="images/Logo.png" width="159px" height="66px" alt=""></a>
+            <a href=#"><img src="images/Logo.png" width="149px" height="56px" alt=""></a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup"
                 aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
@@ -50,29 +50,19 @@
 
     <!-- tentang -->
 
-    <div class="tentang" id="tentang">
+    <div class="tentang" id="tentang" style="font-size:20px;">
         <div class="row row-tentang ">
             <div class="col-md-4 col-tentang">
                 <img class="" src="images/tentang.png" width="118px" height="120px" alt="">
-                <div>
+                <div class="text-white">
                     <h2 class="text-white text-tentang mt-3">Tentang</h2>
-                    <p class="text-white text-tentang-deskirpsi mt-3">Lorem ipsum dolor sit amet consectetur,
-                        adipisicing elit. Recusandae quaerat id odio accusamus eius maiores quam minima aut, tenetur
-                        optio sit cupiditate, at, repudiandae nobis temporibus iure quo dolor. Doloribus autem repellat,
-                        dolor deleniti eos libero quidem nesciunt recusandae voluptatem ad delectus modi in sit, et
-                        sint. Hic dolores voluptates voluptatibus quibusdam recusandae corrupti facilis rem deserunt.
-                        Blanditiis quidem velit asperiores rem odio nihil ullam quasi, beatae, quia eos totam, facere
-                        sit! Ducimus aliquam nobis doloremque, dolorem illum facilis vero asperiores eaque placeat omnis
-                        ratione quas, ipsum ipsa animi dolore similique vel, est unde perspiciatis explicabo. Nesciunt
-                        veniam repudiandae excepturi qui facere sequi veritatis. Ut, nulla. Porro rerum officia
-                        repellendus nostrum dolorum mollitia nesciunt veritatis, sunt in recusandae possimus unde
-                        laudantium animi explicabo reiciendis blanditiis ad quod molestiae. Corporis, odit rem quae,
-                        expedita reiciendis rerum deserunt dicta sed saepe eligendi ea. Laudantium eligendi unde
-                        incidunt sapiente consectetur dignissimos aperiam temporibus optio tenetur! Delectus laboriosam
-                        officiis aperiam asperiores voluptate cum labore inventore eius debitis aliquid suscipit laborum
-                        blanditiis velit animi nisi dolorum hic ullam doloribus, fugiat a. Qui atque voluptatibus
-                        dolorum eius obcaecati quia rerum ea porro praesentium iusto accusantium reiciendis at veritatis
-                        vel, consequuntur, repellat nobis? Omnis modi impedit ratione?</p>
+                    <p class="text-white text-tentang-deskirpsi mt-3">Usaha ini didirikan pada tahun 2011, oleh bu Arinih. Awalnya bu Arinih terima pesanan dari permintaan orang terdekat saja, namun seiring berjalannya waktu bu Arinih mulai membuka warung pempek sederhana di rumah sendiri pada tahun 2016. Hingga saat ini masih bertahan dengan banyaknya pedagang pempek baru.</p>
+                    <p>Dengan Tujuan</p>
+                    <ul class="text-white">
+                        <li>Menyediakan pempek dan makanan khas palembang yang lezat dengan bahan-bahan berkualitas dan resep tradisional.</li>
+                        <li>Memberikan pelayanan yang ramah dan memuaskan kepada setiap pelanggan.</li>
+                        <li>Berinovasi dalam menyajikan berbagai varian pempek yang sesuai dengan selera pelanggan masa kini.</li>
+                    </ul>
                 </div>
             </div>
 
@@ -93,24 +83,21 @@
                 <img src="images/Higienis.png" width="95px" height="100px" alt="">
                 <h4 class="menus-margin">Higienis</h4>
                 <div class="d-flex justify-content-center">
-                    <p class="col-md-7 text-center menus-margin">Lorem ipsum dolor sit amet consectetur adipisicing
-                        elit. Molestias, magni.</p>
+                    <p class="col-md-7 text-center menus-margin">Kami menerapkan standar kebersihan yang ketat dalam setiap tahap produksi. Dari pemilihan bahan hingga penyajian, kebersihan dan higienitas adalah hal yang tidak bisa ditawar.</p>
                 </div>
             </div>
             <div class="col-md-4 border-customer-menus">
                 <img src="images/Customer.png" width="95px" height="100px" alt="">
                 <h4 class=" menus-margin">Pelayanan Baik</h4>
                 <div class="d-flex justify-content-center">
-                    <p class="col-md-7 text-center menus-margin">Lorem ipsum dolor sit amet consectetur adipisicing
-                        elit. Molestias, magni.</p>
+                    <p class="col-md-7 text-center menus-margin">Kami percaya bahwa pelayanan yang baik adalah kunci dari kepuasan pelanggan, Oleh karena itu kami memberikan pelayanan yang ramah, cepat, dan profesional.</p>
                 </div>
             </div>
             <div class="col-md-4">
                 <img src="images/menu.png" width="95px" height="100px" alt="">
                 <h4 class="menus-margin">Keberagaman Menu</h4>
                 <div class="d-flex justify-content-center">
-                    <p class=" menus-margin col-md-7 text-center">Lorem ipsum dolor sit amet consectetur adipisicing
-                        elit. Molestias, magni.</p>
+                    <p class=" menus-margin col-md-7 text-center">Kami menawarkan berbagai jenis pempek yang dirancang untuk memenuhi berbagai selera dan preferensi pelanggan. Mulai dari pempek kapal selam, pempek lenjer, pempek adaan, hingga pempek kulit, semua tersedia dengan cita rasa khas Palembang.</p>
                 </div>
             </div>
         </div>
@@ -126,36 +113,33 @@
 
                 <div class="col-md-4">
                     <div class="card  custom-shadow mx-auto" style="width: 25rem;">
-                        <img src="images/Pempek1.png" class="card-img-top" alt="...">
+                        <img src="images/Pempek1.png" height="300px" class="card-img-top" alt="...">
                         <div class="card-body custom-card-menu">
-                            <h5 class="card-title">PEMPEK</h5>
-                            <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos hic
-                                reprehenderit animi vitae quis ex rem quidem rerum totam ullam?</p>
-                            <h3>RP 0.000/porsi</h3>
+                            <h5 style="font-size: 20" class="card-title">Pempek</h5>
+                            <p class="card-text fw-normal">Pempek asli dari ikan tenggiri, dibuat dengan bahan-bahan segar dan berkualitas. Nikmati kelezatan rasa tradisional Palembang.</p>
+                            <h3>RP {{ number_format($pempek->harga, 0, ',', '.') }}/porsi</h3>
                             <a href="{{ route('product',['kategori'=>'Pempek']) }}" class="container buton-menu btn btn-warning">Go somewhere</a>
                         </div>
                     </div>
                 </div>
                 <div class="col-md-4">
                     <div class="card  custom-shadow  mx-auto" style="width: 25rem;">
-                        <img src="images/Pempek1.png" class="card-img-top" alt="...">
+                        <img src="images/tekwanFoto.jpeg" height="300px" class="card-img-top" alt="...">
                         <div class="card-body custom-card-menu">
-                            <h5 class="card-title">TEKWAN</h5>
-                            <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos hic
-                                reprehenderit animi vitae quis ex rem quidem rerum totam ullam?</p>
-                            <h3>RP 0.000/porsi</h3>
+                            <h5 class="card-title">Tekwan</h5>
+                            <p class="card-text">Tekwan lezat dengan kuah kaldu udang yang gurih, disajikan dengan soun dan irisan bengkoang. Sempurna untuk dinikmati kapan saja.</p>
+                            <h3>RP {{ number_format($tekwan->harga, 0, ',', '.') }}/porsi</h3>
                             <a href="{{ route('product',['kategori'=>'Tekwan']) }}" class="container buton-menu btn btn-warning">Go somewhere</a>
                         </div>
                     </div>
                 </div>
                 <div class="col-md-4">
                     <div class="card custom-shadow  mx-auto" style="width: 25rem;">
-                        <img src="images/Pempek1.png" class="card-img-top" alt="...">
+                        <img src="images/miecelor.jpeg" height="300px" class="card-img-top" alt="...">
                         <div class="card-body custom-card-menu">
-                            <h5 class="card-title">MIE</h5>
-                            <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos hic
-                                reprehenderit animi vitae quis ex rem quidem rerum totam ullam?</p>
-                            <h3>RP 0.000/porsi</h3>
+                            <h5 class="card-title">Mie Celor</h5>
+                            <p class="card-text">Mie celor khas Palembang dengan kuah santan kental dan udang segar, disajikan dengan taburan daun seledri dan bawang goreng.</p>
+                            <h3>RP {{ number_format($mie->harga, 0, ',', '.') }}/porsi</h3>
                             <a href="{{ route('product',['kategori'=>'Mie']) }}" class="container buton-menu btn btn-warning">Go somewhere</a>
                         </div>
                     </div>

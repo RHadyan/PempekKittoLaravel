@@ -49,20 +49,30 @@
         <!-- Navigation -->
         <ul class="navbar-nav">
           <li class="nav-item ">
-            <a class="nav-link" href=" {{ route('admin.index') }}">
+            <a class="nav-link {{ Request::is('admin') ? 'active' : '' }}" href=" {{ route('admin.index') }}">
               <i class="ni ni-tv-2 text-black"></i> Dashboard
             </a>
           </li>
           <li class="nav-item">
-            <a class="nav-link " href="{{ route('admin.pempek') }}">
+            <a class="nav-link {{ Request::is('admin/pempek') ? 'active' : '' }} " href="{{ route('admin.pempek') }}">
               <i class="ni ni-tv-2 text-black"></i> Pempek
             </a>
           </li>
           <li class="nav-item">
-            <form method="POST" action="{{ route('logout') }}">
+            <a class="nav-link {{ Request::is('admin/tekwan') ? 'active' : '' }} " href="{{ route('admin.tekwan') }}">
+              <i class="ni ni-tv-2 text-black"></i> Tekwan
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link {{ Request::is('admin/Mie') ? 'active' : '' }} " href="{{ route('admin.mie') }}">
+              <i class="ni ni-tv-2 text-black"></i> Mie
+            </a>
+          </li>
+          <li class="nav-item d-flex justify-content-center align-items-center ">
+            <form method="POST" class="" action="{{ route('logout') }}">
               @csrf
 
-              <x-dropdown-link :href="route('logout')"
+              <x-dropdown-link class="btn btn-danger mt-5 justify-content-center " style="width: 200px;" :href="route('logout')"
                       onclick="event.preventDefault();
                                   this.closest('form').submit();">
                   {{ __('Log Out') }}
@@ -76,9 +86,5 @@
   </nav>
   <div class="main-content">
     <!-- Navbar -->
-    <nav class="navbar navbar-top navbar-expand-md navbar-dark" id="navbar-main">
-      <div class="container-fluid">
-        <h1 class=" mb-0 text-black text-uppercase d-none d-lg-inline-block">Dashboard</h1>
-      </div>
-    </nav>
+    
     <!-- End Navbar -->

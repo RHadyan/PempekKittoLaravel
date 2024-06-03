@@ -1,7 +1,7 @@
 @include('template.navbar-header')
 <nav class="navbar navbar-top navbar-expand-md navbar-dark" id="navbar-main">
     <div class="container-fluid">
-      <h1 class=" mb-0 text-black text-uppercase d-none d-lg-inline-block">Pempek</h1>
+      <h1 class=" mb-0 text-black text-uppercase d-none d-lg-inline-block">Mie</h1>
     </div>
   </nav>
         <!-- End Navbar -->
@@ -14,7 +14,7 @@
                     <!-- Card stats -->
                     <div class="row d-flex justify-content-center ">
                         <!-- taro card disini -->
-                        @foreach ($pempek as $item)
+                        @foreach ($mie as $item)
                         <div class="card menu mt-3 custom-margin-card" style="width: 18rem;">
                             <img src="{{ asset($item->gambar) }}" class="card-img-top" alt="...">
                             <div class="card-body card-menu">
@@ -45,7 +45,7 @@
                                         <form method="POST" action="{{route('admin.deletepempek', ['menu' => $item -> kode_produk])}}" id="delete">
                                             @csrf
                                             @method('DELETE')
-                                            <input type="submit" value="Delete" class="buton-edit btn btn-danger"/>
+                                            <input type="submit" onclick="alert('Apakah Kamu yakin')" value="Delete" class="buton-edit btn btn-danger"/>
                                         </form>
                                     </div>
                                 </div>
@@ -156,9 +156,9 @@ aria-hidden="true">
                             <div class="mb-3">
                                 <label for="recipient-name" class="col-form-label">Kategori : </label>
                                 <select class="form-control" name="kode_kategori" id="">
-                                    <option class="option" selected value="Pempek">Pempek</option>
+                                    <option class="option" value="Pempek">Pempek</option>
                                     <option class="option" value="Tekwan">Tekwan</option>
-                                    <option class="option" value="Mie">Mie</option>
+                                    <option class="option" selected value="Mie">Mie</option>
 
                                 </select>
                             </div>
